@@ -1,38 +1,38 @@
-# crmx
+# JourneyTale
 
-A Flutter CRM app backed by Firebase (Android, iOS, Web).
+Aplikasi CRM Flutter yang didukung oleh Firebase (Android, iOS, Web).
 
-## Setup for New Developers
+## Setup 
 
 ### 1. Firebase
 
-This repo does not include `firebase_options.dart` or `google-services.json` — you need to generate these for your own Firebase project.
+Repo ini tidak menyertakan `firebase_options.dart` atau `google-services.json` — Anda perlu membuat file tersebut untuk project Firebase Anda sendiri.
 
-1. Create a new Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
-2. Install the FlutterFire CLI: `dart pub global activate flutterfire_cli`
-3. Run `flutterfire configure` in the project root and follow the prompts
-4. This generates `firebase_options.dart` and `android/app/google-services.json` locally (they are gitignored)
+1. Buat project Firebase baru di `console.firebase.google.com`
+2. Install FlutterFire CLI: `dart pub global activate flutterfire_cli`
+3. Jalankan `flutterfire configure` di root project dan ikuti instruksinya
+4. Perintah tersebut akan menghasilkan `firebase_options.dart` dan `android/app/google-services.json` secara lokal (file tersebut sudah masuk `.gitignore`)
 
 ### 2. Environment Variables
 
-Copy `.env.example` to `.env` and fill in your keys:
+Salin `.env.example` menjadi `.env` lalu isi API key Anda:
 
-```
+```bash
 cp .env.example .env
 ```
 
-Get a free AviationStack API key at [aviationstack.com](https://aviationstack.com).
+Dapatkan AviationStack API key gratis di `aviationstack.com`.
 
-### 3. Running the App
+### 3. Menjalankan Aplikasi
 
-Pass env vars at build time using `--dart-define`:
+Pass environment variables saat build menggunakan `--dart-define`:
 
-```
+```bash
 flutter run --dart-define=AVIATIONSTACK_API_KEY=your_key_here
 ```
 
-For release builds:
+Untuk release build:
 
-```
+```bash
 flutter build apk --dart-define=AVIATIONSTACK_API_KEY=your_key_here
 ```
