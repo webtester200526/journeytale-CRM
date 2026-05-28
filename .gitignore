@@ -44,10 +44,13 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Firebase — regenerated per-dev via flutterfire configure
+# Firebase — regenerated per-dev via flutterfire configure / firebase init
 google-services.json
 GoogleService-Info.plist
 firebase_options.dart
+firebase.json
+.firebaserc
+.firebase/
 
 # Environment variables
 .env
