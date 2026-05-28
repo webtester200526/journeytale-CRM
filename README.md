@@ -11,7 +11,7 @@ Repo ini tidak menyertakan `firebase_options.dart` atau `google-services.json` â
 1. Buat project Firebase baru di `console.firebase.google.com`
 2. Install FlutterFire CLI: `dart pub global activate flutterfire_cli`
 3. Jalankan `flutterfire configure` di root project dan ikuti instruksinya
-4. Perintah tersebut akan menghasilkan `firebase_options.dart` dan `android/app/google-services.json` secara lokal (file tersebut sudah masuk `.gitignore`)
+4. Perintah tersebut akan menghasilkan `firebase_options.dart` dan `android/app/google-services.json` secara lokal 
 
 ### 2. Environment Variables
 
